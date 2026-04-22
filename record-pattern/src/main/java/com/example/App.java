@@ -1,6 +1,8 @@
 package com.example;
 
-	/*  Metodo que recibe un objeto como parametro y muestra los detalles de dicho objeto
+import java.lang.module.ModuleDescriptor.Builder;
+
+/*  Metodo que recibe un objeto como parametro y muestra los detalles de dicho objeto
 	 * utilizando la sentencia if y Pattern Machine con el metodo instanceof y además destructure
 	 * del tipo record que es uno de los record pattern  */
 public class App {
@@ -24,5 +26,28 @@ public class App {
     			.build();
     	
     	imprimeDetalles(libro);
+    	
+    /**
+     * Estilo de comentario para javadoc.  Investigar
+     */
+    	
+    // Los patrones Record tambien pueden ser anidados, permitiendo permite desestructurar gráficos
+    //	de objetos complejos en un solo paso.
+    	
+    	Library library = Library.builder()
+    			.name("Biblioteca de Madrid")
+    			.bestseller(
+    					Book.builder()
+    					.title("Java Programming")
+    					.author("John Doe")
+    					.build()
+    			)
+    			.build();
+    	
+    	if (library instanceof Library(String nombre, Book(var titulo, var autor))) {
+    		System.out.println("En la Biblioteca: " + nombre + ", El Bestseller es: " + titulo + ", por"
+    				+ " el autor: " + autor);
+			
+		}
     }
 }
