@@ -7,9 +7,10 @@ public class App {
 	
     static void imprimeDetalles(Object obj) {
     	
-    	if (obj instanceof Book book)  {
-    		System.out.println("Titulo del Libro: " + book.title());
-    		System.out.println("Autor del libro: " + book.author());
+    	// en java 21 con record pattern, especificamente con destructure
+    	if (obj instanceof Book(String titulo, String autor))  {
+    		System.out.println("Titulo del Libro: " + titulo);
+    		System.out.println("Autor del libro: " + autor);
     		
     	}
     }
