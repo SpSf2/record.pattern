@@ -1,7 +1,5 @@
 package com.example;
 
-import java.lang.module.ModuleDescriptor.Builder;
-
 /*  Metodo que recibe un objeto como parametro y muestra los detalles de dicho objeto
 	 * utilizando la sentencia if y Pattern Machine con el metodo instanceof y además destructure
 	 * del tipo record que es uno de los record pattern  */
@@ -31,7 +29,7 @@ public class App {
      * Estilo de comentario para javadoc.  Investigar
      */
     	
-    // Los patrones Record tambien pueden ser anidados, permitiendo permite desestructurar gráficos
+    // Los patrones Record tambien pueden ser anidados, permitiendo desestructurar gráficos
     //	de objetos complejos en un solo paso.
     	
     	Library library = Library.builder()
